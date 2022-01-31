@@ -11,7 +11,9 @@ header {
 header .title {
   text-align: center;
   color: #FFFFFF;
-  font-size: 32px;
+  font-size: 36px;
+  font-weight: bold;
+  text-decoration: underline;
 }
 
 main {
@@ -20,13 +22,39 @@ main {
 }
 
 nav {
+  height: 100vh;
+
+  color: #fff;
+  background-color: #59F;
+  font-size: 20px;
+
   display: block;
   padding: 30px;
-  background-color: #22F;
   width: 20%;
 }
 
+nav ul li {
+  margin: 15px 0;
+}
+
+nav ul li:before {
+  content: "\2192 \0020";
+}
+
+nav ul li a {
+  text-decoration: underline;
+}
+
 #content {
-    width: 100%;
-    padding: 100px;
+  width: 100%;
+  padding: 100px 300px;
+
+  font-size: 20px;
+}
+
+#content h1 {
+  font-size: 26px;
+  font-weight: bold;
+  margin: 10px;
+  margin-left: 20px;
 }
