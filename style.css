@@ -1,6 +1,12 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap");
+
+html {
+  scroll-behavior: smooth;
+}
+
 header {
-  background: right no-repeat url("img/header.jpg");
-  
+  background: left no-repeat url("img/header.jpg") fixed;
+
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -10,27 +16,33 @@ header {
 
 header .title {
   text-align: center;
-  color: #FFFFFF;
-  font-size: 36px;
+  color: #ffffff;
+  font-size: 45px;
   font-weight: bold;
   text-decoration: underline;
+  font-family: "Montserrat", sans-serif;
 }
 
 main {
-    display: flex;
-    justify-content: space-between;
+  display: flex;
+  justify-content: space-between;
 }
 
 nav {
-  height: 100vh;
-
   color: #fff;
-  background-color: #59F;
+  background-color: #59f;
   font-size: 20px;
 
   display: block;
   padding: 30px;
-  width: 20%;
+  width: 18%;
+  font-family: "Montserrat", sans-serif;
+}
+
+nav ul {
+  display: block;
+  position: sticky;
+  top: 20px;
 }
 
 nav ul li {
@@ -55,6 +67,18 @@ nav ul li a {
 #content h1 {
   font-size: 26px;
   font-weight: bold;
-  margin: 10px;
-  margin-left: 20px;
+  margin: 20px;
+}
+
+#content h3 {
+  text-decoration: underline;
+  margin: 20px 10px;
+}
+
+#content ul li:before {
+  content: "\2192 \0020";
+}
+
+#content ul li {
+  margin: 15px 0;
 }
