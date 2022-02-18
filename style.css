@@ -35,7 +35,7 @@ nav {
 
   display: block;
   padding: 30px;
-  width: 18%;
+  width: 350px;
   font-family: "Montserrat", sans-serif;
 }
 
@@ -46,7 +46,8 @@ nav ul {
 }
 
 nav ul li {
-  margin: 15px 0;
+  margin: 20px 0;
+  margin-left: 15px;
 }
 
 nav ul li:before {
@@ -59,7 +60,7 @@ nav ul li a {
 
 #content {
   width: 100%;
-  padding: 100px 300px;
+  padding: 100px 15%;
 
   font-size: 20px;
 }
@@ -81,4 +82,20 @@ nav ul li a {
 
 #content ul li {
   margin: 15px 0;
+}
+
+@media (max-width: 800px) {
+  main {
+    display: block;
+  }
+  nav {
+    width: 100%;
+    text-align: center;
+  }
+}
+
+@media (max-width: 550px) {
+  header .title {
+    font-size: 30px;
+  }
 }
