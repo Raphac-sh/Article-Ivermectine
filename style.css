@@ -30,7 +30,7 @@ main {
 
 nav {
   color: #fff;
-  background-color: #59f;
+  background-color: #288ACC;
   font-size: 20px;
 
   display: block;
@@ -82,6 +82,10 @@ nav ul li a {
 
 #content ul li {
   margin: 15px 0;
+}
+
+#content img {
+    margin: 50px;
 }
 
 @media (max-width: 800px) {
